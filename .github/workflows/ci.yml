@@ -23,9 +23,7 @@ jobs:
         run: npm ci
 
       - name: Run Linter
-        run: npm run lint
-        echo: "Run Linter"
+        run: npm run lint && echo "Linting completed"
 
       - name: Run Jest Tests
-        run: npm test
-        echo: "Run Jest Tests"
+        run: npm test && run echo "Jest tests completed"
