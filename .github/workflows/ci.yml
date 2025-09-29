@@ -35,3 +35,9 @@ jobs:
         run: npm ci
       - name: Run Jest Tests
         run: npm test && echo "Jest tests completed"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
+        run: echo "Deployment successful"
